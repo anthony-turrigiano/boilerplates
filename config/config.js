@@ -14,6 +14,7 @@ module.exports = {
             public : "./src/public",
             videos : "./src/public/videos",
             favicons : "./src/public/img/favicons",
+            views : "./src/views",
         }
     }
 };
