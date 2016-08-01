@@ -1,3 +1,6 @@
+//configuration
+var config = require("./config/config");
+
 //gulp 
 var gulp = require("gulp");
 
