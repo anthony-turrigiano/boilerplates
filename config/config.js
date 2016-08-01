@@ -2,17 +2,18 @@ module.exports = {
     host : process.env.IP || '0.0.0.0',
     port : process.env.PORT || 8080,
     path : {
-        root : "./",
+        root : ".",
         sass : "./sass",
         gulpTasks : "./gulpTasks",
         src : {
-            css: "./public/src/css",
-            fonts: "./public/src/css",
-            icons: "./public/src/icons",
-            img : "./public/src/img",
-            js : "./public/src/js",
-            videos : "./public/src/videos",
-            favicons : "./public/src/img/favicons",
+            css: "./src/public/css",
+            fonts: "./src/public/css",
+            icons: "./src/public/icons",
+            img : "./src/public/img",
+            js : "./src/public/js",
+            public : "./src/public",
+            videos : "./src/public/videos",
+            favicons : "./src/public/img/favicons",
         }
     }
 };

@@ -6,8 +6,12 @@ var gulp = require("gulp");
 
 //gulp-load-plugins
 var plugins = require("gulp-load-plugins")({
-	rename : {},
+	rename : {
+	    "gulp-jshint" : "gulpJSHint"
+	},
 	pattern : ["*"]
 });
 
 //Tasks
+gulp.task("build", require(config.path.gulpTasks + "/build")(gulp, plugins, config));
+gulp.task("build-jshint", require(config.path.gulpTasks + "/build.jshint")(gulp, plugins, config));
